@@ -1,3 +1,4 @@
+import { ProfileData } from './profile-data';
 import { ResourceData } from './resource-data';
 import { ArtistData } from './artist-data';
 import { AlbumData } from './album-data';
