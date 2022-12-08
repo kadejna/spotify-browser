@@ -1,3 +1,6 @@
+<app-handtracker (onPrediction)="prediction($event)"></app-handtracker>
+<div [innerHTML]="gesture"></div>
+
 <div class="row">
 	<div *ngIf="track" class="col-6">
 		<!--TODO: populate with track name-->

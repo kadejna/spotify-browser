@@ -4,6 +4,7 @@ import { ArtistData } from '../../data/artist-data';
 import { TrackData } from '../../data/track-data';
 import { AlbumData } from '../../data/album-data';
 import {SpotifyService} from '../../services/spotify.service';
+import { PredictionEvent } from 'src/app/prediction-event';
 
 @Component({
   selector: 'app-album-page',
@@ -14,6 +15,7 @@ export class AlbumPageComponent implements OnInit {
 	albumId:string;
 	album:AlbumData;
 	tracks:TrackData[];
+  gesture: String = "";
 
 
   constructor(private route: ActivatedRoute, private spotifyService: SpotifyService) { }
@@ -28,6 +30,16 @@ export class AlbumPageComponent implements OnInit {
     this.spotifyService.getTracksForAlbum(this.albumId).then((data) => { 
       this.tracks = data; 
     });
+  }
+
+  // instead of importing the page component with an activate route & spotify service to handtracker.component.ts,
+  // the prediction function body is implemented 
+  prediction(event: PredictionEvent) { 
+    this.gesture = event.getPrediction();
+    if (this.gesture == "One Open Hand, One Hand Pointing") { 
+      let button = document.getElementsByClassName("btn btn-light")[0] as HTMLElement | null; 
+      button.click();
+    }
   }
 
 }

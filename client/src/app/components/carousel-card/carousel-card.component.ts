@@ -14,4 +14,9 @@ export class CarouselCardComponent implements OnInit {
   ngOnInit() {
   }
 
+  directLocalPage() { 
+    let button = document.getElementById("local") as HTMLElement | null; 
+    button.click();
+  }
+
 }

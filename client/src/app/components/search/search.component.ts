@@ -29,4 +29,8 @@ export class SearchComponent implements OnInit {
     });
   }
 
+  getSearch() { 
+    document.getElementById("search").click();
+  }
+
 }

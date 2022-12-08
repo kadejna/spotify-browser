@@ -27,4 +27,15 @@ export class AboutComponent implements OnInit {
       this.profile_link = data.spotifyProfile;
     });
   }
+
+  // Clicks the Load About Me Button
+  loadAboutMe() {
+    document.getElementById("loadAboutMe").click(); 
+    //this.aboutMe(); 
+  }
+
+  // Clicks the Open Profile Button
+  openProfile() {
+    document.getElementById("openProfile").click();
+  }
 }
