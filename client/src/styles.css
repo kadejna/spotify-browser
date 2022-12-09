@@ -1,7 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 
 body {
-	background-color: var(--bs-gray-dark);
+	background-color: black;
 	color: var(--bs-light);
 	font-family: 'Lato', sans-serif;
 }

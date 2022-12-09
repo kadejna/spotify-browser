@@ -5,3 +5,7 @@ input {
 select {
 	margin: 10px;
 }
+
+.btn.btn-light { 
+	background-color: #1DB954;
+}

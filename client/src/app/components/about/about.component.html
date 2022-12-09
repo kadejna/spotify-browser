@@ -1,11 +1,25 @@
 <!--TODO: Define click callback to load about me information-->
 <!--Added an ID attribute to differentiate "Load info about me" and "Open profile on Spotify"-->
-<button id="loadAboutMe" class="btn btn-light" (click)="aboutMe()">Load info about me</button>
+
 <!--TODO: replace ??? to bind to name-->
-<h3>Logged in user: {{name}}</h3>
+<h1>Welcome!</h1>
+<h2>User: {{name}}</h2>
 <!--TODO: bind img src's to profile_pic-->
 <img [src]= "profile_pic">
-<p>
-	<!--TODO: bind link's href to profile_link-->
-	<a id="openProfile" class="btn btn-light" target="_blank" [href]="profile_link">Open profile on Spotify</a>	
-</p>
+
+
+<!--In an effort to align the two buttons side by side-->
+<h3 class="mt-4">
+	<div class="about">
+		<button id="loadAboutMe" class="btn btn-light" (click)="aboutMe()">Load Info About Me</button>
+	</div>
+	<div class="profile">
+		<p>
+			<!--TODO: bind link's href to profile_link-->
+			<a id="openProfile" class="btn btn-light" target="_blank" [href]="profile_link">Open Profile on Spotify</a>	
+		</p>
+	</div>
+</h3>
+
+
+

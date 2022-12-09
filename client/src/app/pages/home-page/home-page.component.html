@@ -1,9 +1,22 @@
-
-<app-handtracker (onPrediction)="prediction($event)"></app-handtracker>
-
-<div [innerHTML]="gesture"></div>
-
-<div class="row">
-	<app-about class="col-6"></app-about>
-	<app-search class="col-6"></app-search>
+<!--Used Bootstrap to ensure responsiveness-->
+<div class="container">
+	<div class="row">
+	  <div class="col-lg-4">
+		<div class="center">
+			<h1> Use Your Hand! </h1>
+			<app-handtracker (onPrediction)="prediction($event)"></app-handtracker>
+			<div [innerHTML]="gesture"></div>
+		</div>
+		<app-about class="col-6"></app-about>
+	  </div>
+	  <div class="col-lg-8">
+		<app-search class="col-6"></app-search>
+	  </div>
+	</div>
 </div>
+
+
+      	
+	
+
+	

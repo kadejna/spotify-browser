@@ -1,3 +1,11 @@
 img {
-	max-width: 400px;
+	max-width: 300px;
+}
+
+.about, .profile {
+    float: left; 
+}
+
+.btn.btn-light { 
+	background-color: #1DB954;
 }

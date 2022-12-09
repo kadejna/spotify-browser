@@ -6,3 +6,7 @@
 app-artist {
 	vertical-align: middle;
 }
+
+.btn.btn-light { 
+	background-color: #1DB954;
+}
